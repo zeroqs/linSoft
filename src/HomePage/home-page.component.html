@@ -1,0 +1,11 @@
+<div class="container">
+  <header class="header">
+    <create-component></create-component>
+  </header>
+  <main class="todos">
+    <div class="todo" *ngFor="let todo of todos">
+      <post-component [todo]="todo"></post-component>
+    </div>
+  </main>
+</div>
+

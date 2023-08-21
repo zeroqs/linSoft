@@ -1,0 +1,7 @@
+.create-form-todo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  max-width: 500px;
+}
+

@@ -1,0 +1,7 @@
+.card-header {
+  justify-content: space-between;
+}
+
+.done {
+  text-decoration: line-through;
+}

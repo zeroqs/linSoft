@@ -1,0 +1,15 @@
+<div class="post">
+  <mat-card>
+    <mat-card-header class="card-header" [ngClass]="{'done': checked === true}">
+      <mat-card-title>{{todo.title}}</mat-card-title>
+      <mat-checkbox [checked]="checked" (click)="handlerCheck()" class="example-margin"></mat-checkbox>
+      <mat-card-subtitle>{{todo.description}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-actions>
+      <button mat-button color="primary">Редактировать</button>
+      <button (click)="delete()" mat-button color="warn">Удалить</button>
+    </mat-card-actions>
+
+  </mat-card>
+</div>
