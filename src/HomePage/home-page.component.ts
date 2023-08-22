@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
-import { TodoDto } from '../Post/Dto'
-import { TodoService } from '../Post/Service/todo.service'
+import { TodoDto } from '../Todo/Dto'
+import { TodoService } from '../Todo/Service/todo.service'
 
 @Component({
   selector: 'app-HomePage',

@@ -12,7 +12,7 @@ import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
 import { MatSelectModule } from '@angular/material/select'
 import { Router } from '@angular/router'
-import { TodoService } from '../../Post/Service/todo.service'
+import { TodoService } from '../../Todo/Service/todo.service'
 
 @Component({
   selector: 'create-component',
