@@ -35,6 +35,9 @@ export class HomePageComponent implements OnInit {
       this.filteredTodos = data
       this.TodoService.updateTodos(data)
     })
-    this.TodoService.posts$.subscribe((data) => (this.todos = data))
+    this.TodoService.posts$.subscribe((todos) => {
+      this.todos = todos
+      this.filteredTodos = todos
+    })
   }
 }

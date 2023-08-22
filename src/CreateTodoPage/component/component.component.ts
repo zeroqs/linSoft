@@ -44,7 +44,7 @@ export class CreateComponent implements OnInit {
 
   submitApplication() {
     const newPost = this.form.value
-    this.TodoService.create({ ...newPost, completed: false }).add(() =>
+    this.TodoService.create({ ...newPost, completed: false }).subscribe(() =>
       this.router.navigate(['/']),
     )
   }

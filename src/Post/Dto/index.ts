@@ -1,5 +1,9 @@
 export interface TodoDto {
-  id: number
+  id: string
+  createdAt: string
+  avatar: string
+  name: string
+
   title: string
   description: string
   completed: boolean

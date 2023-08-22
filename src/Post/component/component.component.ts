@@ -21,7 +21,7 @@ export class PostComponent implements OnInit {
   @Input() todo: TodoDto
 
   delete() {
-    this.TodoService.delete(this.todo.id)
+    this.TodoService.delete(this.todo.id).subscribe()
   }
 
   ngOnInit(): void {
@@ -30,5 +30,10 @@ export class PostComponent implements OnInit {
 
   handlerCheck() {
     this.checked = !this.checked
+    this.TodoService.changeCheckedTodo(
+      this.todo.id,
+      this.todo,
+      this.checked,
+    ).subscribe()
   }
 }
