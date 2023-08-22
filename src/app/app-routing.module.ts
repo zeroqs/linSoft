@@ -7,7 +7,7 @@ import { NotFoundPageComponent } from '../NotFoundPage/not-found-page.component'
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: 'edit', component: EditPageComponent },
+  { path: 'edit/:todoId', component: EditPageComponent },
   { path: 'create', component: CreateTodoPageComponent },
   { path: '**', component: NotFoundPageComponent },
 ]
