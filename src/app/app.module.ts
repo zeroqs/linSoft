@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CreateComponent } from '../CreateTodoPage/component/component.component'
 import { CreateTodoPageComponent } from '../CreateTodoPage/create-todo-page.component'
+import { EditComponent } from '../EditPage/component/component.component'
 import { EditPageComponent } from '../EditPage/edit-page.component'
 import { HeaderComponent } from '../Header/header.component'
 import { ControlsTodoHeaderComponent } from '../HomePage/component/controls-todo-header.component'
@@ -30,6 +31,7 @@ import { AppRoutingModule } from './app-routing.module'
     CreateComponent,
     ControlsTodoHeaderComponent,
     HeaderComponent,
+    EditComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

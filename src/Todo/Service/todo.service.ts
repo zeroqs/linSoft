@@ -32,8 +32,28 @@ export class TodoService {
     )
   }
 
+  changeTodo(id: string, todo: TodoDto) {
+    const url = `${environment.apiUrl}/${id}`
+    return this.http.put(url, todo).pipe(
+      tap((res) => {
+        const resObj = res as TodoDto
+        const todos = this.todoSubject.getValue()
+        const index = todos.findIndex((item) => item.id === resObj.id)
+        if (todos[index]) {
+          todos[index] = resObj
+        }
+        this.updateTodos(todos)
+      }),
+    )
+  }
+
   getAll() {
     return this.http.get<TodoDto[]>(environment.apiUrl)
+  }
+
+  getById(id: string) {
+    const url = `${environment.apiUrl}/${id}`
+    return this.http.get<TodoDto>(url)
   }
 
   create(post: TodoDto) {
