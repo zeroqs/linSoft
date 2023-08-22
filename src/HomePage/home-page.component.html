@@ -4,7 +4,7 @@
                              (newItemEvent)="changeSelectedValue($event)"></controls-todo-component>
   </header>
   <main class="todos">
-    <div class="todo" *ngFor="let todo of todos">
+    <div class="todo" *ngFor="let todo of filteredTodos">
       <post-component [todo]="todo"></post-component>
     </div>
   </main>
