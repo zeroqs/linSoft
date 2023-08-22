@@ -8,7 +8,7 @@ import { EditPageComponent } from '../EditPage/edit-page.component'
 import { ControlsTodoHeaderComponent } from '../HomePage/component/controls-todo-header.component'
 import { HomePageComponent } from '../HomePage/home-page.component'
 import { NotFoundPageComponent } from '../NotFoundPage/not-found-page.component'
-import { PostComponent } from '../Post/component/component.component'
+import { TodoComponent } from '../Todo/component/component.component'
 import { AppComponent } from './app.component'
 import { AppRoutingModule } from './app-routing.module'
 
@@ -25,7 +25,7 @@ import { AppRoutingModule } from './app-routing.module'
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    PostComponent,
+    TodoComponent,
     CreateComponent,
     ControlsTodoHeaderComponent,
   ],

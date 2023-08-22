@@ -7,13 +7,13 @@ import { TodoDto } from '../Dto'
 import { TodoService } from '../Service/todo.service'
 
 @Component({
-  selector: 'post-component',
+  selector: 'todo-component',
   standalone: true,
   imports: [CommonModule, MatCardModule, MatButtonModule, MatCheckboxModule],
   templateUrl: './component.component.html',
   styleUrls: ['./component.component.css'],
 })
-export class PostComponent implements OnInit {
+export class TodoComponent implements OnInit {
   constructor(private TodoService: TodoService) {}
 
   checked: boolean
