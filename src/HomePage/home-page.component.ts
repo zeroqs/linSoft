@@ -16,7 +16,6 @@ export class HomePageComponent implements OnInit {
 
   changeSelectedValue(newItem: string) {
     this.selected = newItem
-    console.log(this.selected)
     switch (this.selected) {
       case 'done':
         this.filteredTodos = this.todos.filter((item) => item.completed)
