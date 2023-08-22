@@ -1,0 +1,16 @@
+<form [formGroup]="form" class="edit-form-todo" (ngSubmit)="submitApplication()">
+  <mat-form-field appearance="outline">
+    <mat-label>Название задачи</mat-label>
+    <input [value]="todo?.title" formControlName="title" matInput>
+    <mat-error *ngIf="titleMessage?.errors?.['required']">Название задачи обязательно.</mat-error>
+  </mat-form-field>
+
+
+  <mat-form-field appearance="outline">
+    <mat-label>Описание</mat-label>
+    <textarea [value]="todo?.description" formControlName="description" matInput></textarea>
+    <mat-error *ngIf="descriptionMessage?.errors?.['required']">Описание обязательно.</mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button type="submit" color="primary" [disabled]="!form.valid">Редактировать</button>
+</form>
