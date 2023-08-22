@@ -9,8 +9,14 @@ import { TodoService } from '../Post/Service/todo.service'
 })
 export class HomePageComponent implements OnInit {
   todos: TodoDto[] = []
+  selected = 'all'
 
   constructor(private TodoService: TodoService) {}
+
+  changeSelectedValue(newItem: string) {
+    this.selected = newItem
+    console.log(this.selected)
+  }
 
   ngOnInit(): void {
     this.TodoService.getAll().subscribe((data) => {

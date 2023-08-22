@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
 import { MatSelectModule } from '@angular/material/select'
+import { Router } from '@angular/router'
 import { TodoService } from '../../Post/Service/todo.service'
 
 @Component({
@@ -31,7 +32,10 @@ import { TodoService } from '../../Post/Service/todo.service'
   styleUrls: ['./component.component.css'],
 })
 export class CreateComponent implements OnInit {
-  constructor(private TodoService: TodoService) {}
+  constructor(
+    private TodoService: TodoService,
+    private router: Router,
+  ) {}
 
   form: FormGroup
   title: string
@@ -40,7 +44,9 @@ export class CreateComponent implements OnInit {
 
   submitApplication() {
     const newPost = this.form.value
-    this.TodoService.create({ ...newPost, completed: false })
+    this.TodoService.create({ ...newPost, completed: false }).add(() =>
+      this.router.navigate(['/']),
+    )
   }
 
   ngOnInit(): void {

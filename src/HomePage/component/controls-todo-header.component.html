@@ -1,0 +1,13 @@
+<div class="controls">
+  <mat-form-field>
+    <mat-label>Сортировать</mat-label>
+    <mat-select [(value)]="selected" (valueChange)="changeSelectValue()">
+      <mat-option value="all">Все</mat-option>
+      <mat-option value="done">Выполненные</mat-option>
+      <mat-option value="progress">В прогрессе</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
