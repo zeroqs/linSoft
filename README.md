@@ -1,27 +1,23 @@
 # LinSoft
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+✔️ Список задач: Показывать список задач, включая заголовок и описание каждой задачи. Каждая задача должна иметь кнопку для редактирования и удаления. 
 
-## Development server
+✔️ Добавление задачи: Добавить возможность добавления новых задач с заголовком и описанием.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+❌ Редактирование задачи: При редактировании задачи пользователь может изменять как заголовок, так и описание задачи.
 
-## Code scaffolding
+✔️ Удаление задачи: Предоставить возможность удаления задачи из списка.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+✔️ Роутинг: Использовать Angular Router для создания двух представлений: список задач и форма редактирования/добавления задачи.
 
-## Build
+✔️ Сохранение данных: Задачи можно хранить в памяти приложения (не обязательно использовать серверное хранилище данных).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+❌ Обработка ошибок: Обеспечить минимальную обработку ошибок, такие как некорректный ввод и недоступность страницы.
 
-## Running unit tests
+✔️ Стилизация: Применить базовую стилизацию, чтобы приложение выглядело аккуратно. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+✔️ Валидация формы добавления/редактирования задачи. 
 
-## Running end-to-end tests
+❌ Фильтрация задач по статусу (все, активные, выполненные). 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+✔️ Возможность помечать задачи как выполненные.
